@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Karta zamestnance</title>
   </head>
+
   <body>
     <aside>
       <img src="/images.png" alt="Logo Accenture" class="sidebar-logo" />
@@ -20,37 +21,38 @@
     </aside>
 
     <main>
-      <header>
+      <header class="main-header">
         <h2>Sprava majetku zamestnance</h2>
-        <form action="">
+
+        <form action="" class="search-bar">
           <label for="search">Hledat</label>
           <input type="text" id="search" />
         </form>
         <div>
           <span>Filtrovat</span>
-          <button>Vse</button>
-          <button>V poradku</button>
-          <button>Fasovani</button>
-          <button>Nefunkcni</button>
+          <button class="filter-btn">Vse</button>
+          <button class="filter-btn">V poradku</button>
+          <button class="filter-btn">Fasovani</button>
+          <button class="filter-btn">Nefunkcni</button>
         </div>
       </header>
 
       <section id="asset-grid">
         <!--divy jsou docasne, budou nahrazeny polem v JS-->
-        <div>Majetek 1</div>
-        <div>Majetek 2</div>
-        <div>Majetek 3</div>
-        <div>Majetek 4</div>
-        <div>Majetek 5</div>
-        <div>Majetek 6</div>
-        <div>Majetek 7</div>
+        <div class="asset-card">Majetek 1</div>
+        <div class="asset-card">Majetek 2</div>
+        <div class="asset-card">Majetek 3</div>
+        <div class="asset-card">Majetek 4</div>
+        <div class="asset-card">Majetek 5</div>
+        <div class="asset-card">Majetek 6</div>
+        <div class="asset-card">Majetek 7</div>
       </section>
-    </main>
 
-    <footer>
-      <a href="#">Kontaktovat podporu</a>
-      <p>Text ohledne tm a gdpr a vop</p>
-    </footer>
+      <footer class="main-footer">
+        <a href="#">Kontaktovat podporu</a>
+        <p>Text ohledne tm a gdpr a vop</p>
+      </footer>
+    </main>
 
     <script type="module" src="/src/main.js"></script>
   </body>
