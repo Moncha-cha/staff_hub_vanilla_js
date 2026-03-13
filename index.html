@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="cs">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -7,7 +7,44 @@
     <title>vite-template-js</title>
   </head>
   <body>
-    <div id="app"></div>
+    <aside>
+      <h1>Karta zamestnance</h1>
+
+      <ul>
+        <li>Dochazka</li>
+        <li>Skoleni</li>
+        <li>Sprava majetku</li>
+        <li>Certifikace</li>
+      </ul>
+    </aside>
+
+    <main>
+      <header>
+        <span>Logo doplnit img</span>
+        <h2>Sprava majetku zamestnance</h2>
+        <div>
+          <span>Filtrovat</span>
+          <button>Vse</button>
+          <button>V poradku</button>
+          <button>Fasovani</button>
+          <button>Nefunkcni</button>
+        </div>
+      </header>
+
+      <section id="asset-grid">
+        <div>Majetek 1</div>
+        <!--divy jsou docasne, budou nahrazeny polem v JS-->
+        <div>Majetek 2</div>
+        <div>Majetek 3</div>
+        <div>Majetek 4</div>
+      </section>
+    </main>
+
+    <footer>
+      <a href="#">Kontaktovat podporu</a>
+      <p>Text ohledne tm a gdpr a vop</p>
+    </footer>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
