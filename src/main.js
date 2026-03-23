@@ -211,7 +211,7 @@ adminButton.addEventListener("click", () => {
 
   // Pokud neni prihlasen
   else {
-    const password = prompt("Zadejte heslo pro přístup do administrace:");
+    const password = prompt("Zadejte heslo pro přístup do administrace:"); // nepouzila jsem modal s password inputem, stavim funkcni minimum
     if (password === "admin123") {
       console.log("Admin přihlášen");
       isAdmin = true;
@@ -225,3 +225,8 @@ adminButton.addEventListener("click", () => {
     }
   }
 });
+
+// ----- FILTRY
+
+const nefunkcniMajetek = assets.filter((asset) => asset.status_id === "issue");
+console.log("Nefunkční majetek:", nefunkcniMajetek);
