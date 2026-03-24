@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/images.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karta zaměstnance</title>
+  </head>
+
+  <body>
+    <aside>
+      <div class="sidebar-top">
+        <img src="/images.png" alt="Logo Accenture" class="sidebar-logo" />
+        <h1>Karta zaměstnance</h1>
+
+        <ul>
+          <li><a href="#">Docházka</a></li>
+          <li><a href="#">Školení</a></li>
+          <li><a href="#">Správa majetku</a></li>
+          <li><a href="#">Certifikace</a></li>
+        </ul>
+      </div>
+
+      <div class="admin-section">
+        <hr />
+        <button id="admin-toggle-btn" class="sidebar-btn">Režim správce</button>
+      </div>
+    </aside>
+
+    <main>
+      <header class="main-header">
+        <h2>
+          Správa majetku
+          <small
+            >Zaměstnanec: <span id="employee-name-hook"></span> | ID:
+            <span id="employee-id-hook"></span>
+          </small>
+        </h2>
+
+        <form action="" class="search-bar">
+          <label for="search-input">Hledat</label>
+          <input type="text" id="search-input" />
+        </form>
+        <div class="filter-group">
+          <span>Filtrovat</span>
+          <button class="filter-btn" data-status="all">
+            Vše <span>(0)</span>
+          </button>
+          <button class="filter-btn" data-status="ok">
+            V pořádku <span>(0)</span>
+          </button>
+          <button class="filter-btn" data-status="pending">
+            Fasování <span>(0)</span>
+          </button>
+          <button class="filter-btn" data-status="issue">
+            Nefunkční <span>(0)</span>
+          </button>
+        </div>
+      </header>
+
+      <section id="asset-grid">
+        <!--divy jsou docasne, budou nahrazeny polem v JS-->
+        <!--<div class="asset-card">Majetek 1</div>
+        <div class="asset-card">Majetek 2</div>
+        <div class="asset-card">Majetek 3</div>
+        <div class="asset-card">Majetek 4</div>
+        <div class="asset-card">Majetek 5</div>
+        <div class="asset-card">Majetek 6</div>
+        <div class="asset-card">Majetek 7</div> -->
+      </section>
+
+      <footer class="main-footer">
+        <a href="#">Kontaktovat podporu</a>
+        <p>Text ohledně TM | GDPR | VOP | FAQ</p>
+      </footer>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
