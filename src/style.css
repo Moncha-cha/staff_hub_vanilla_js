@@ -29,6 +29,10 @@ body.admin-mode .asset-card .admin-btn {
   display: inline-block;
 }
 
+small {
+  display: block;
+}
+
 /* --- 2. SIDEBAR (ASIDE) --- */
 aside {
   background-color: var(--white);

@@ -156,6 +156,11 @@ const assets = [
   },
 ];
 
+const currentEmployee = {
+  name: "Monika Nováková",
+  id: "INT-1234ACC",
+};
+
 // ------ OVLADACE, STAV
 
 const assetContainer = document.getElementById("asset-grid");
@@ -163,6 +168,13 @@ const adminButton = document.getElementById("admin-toggle-btn");
 let isAdmin = false;
 
 // ------ FUNKCE
+
+function renderEmployeeInfo(employee) {
+  const nameHook = document.getElementById("employee-name-hook");
+  const idHook = document.getElementById("employee-id-hook");
+  nameHook.textContent = employee.name;
+  idHook.textContent = employee.id;
+}
 
 function renderAssets(assets) {
   assetContainer.innerHTML = ""; // aby nedaval duplikace
@@ -197,6 +209,8 @@ function renderAssets(assets) {
 }
 
 renderAssets(assets);
+
+renderEmployeeInfo(currentEmployee);
 
 // ------ UDALOSTI
 
